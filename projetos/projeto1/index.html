@@ -19,6 +19,11 @@
             border: 1px solid #eccd92 !important;
             opacity: 1 !important;
         }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -26,14 +31,26 @@
 
     <div style="min-height: 100vh;" class="d-flex flex-column">
 
-        <header style="min-height: 10vh;">
+        <header id="inicio" style="min-height: 10vh;">
 
-            <nav class="navbar" style="background-color: #e7dbcb; min-height: 10vh">
+            <nav class="navbar" style="background-color: #F2F2F2; min-height: 10vh">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">
                         <img width="40" height="40" src="./images/navdog.png" alt="dog" />
                         Cuidados Com Animais no Verão
                     </a>
+
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pagina2">Cuidados com o Pet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pagina3">Contato</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
 
@@ -66,14 +83,14 @@
 
 
             <!-- Pagina 2 -->
-            <section id="pagina2" style="min-height: 100vh; background-color: aqua; display: flex;">
+            <section id="pagina2" style="min-height: 100vh; display: flex;">
 
                 <div class="container-fluid">
 
                     <div class="row" style="min-height: 100vh;">
                         <!-- Coluna Esquerda -->
-                        <div
-                            class="col-12 bg-primary col-md-6 d-flex flex-column align-items-center justify-content-center">
+                        <div style="background-color: #A67153; padding: 24px;"
+                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
                             <h2>Cuidados com o Pet</h2>
                             <br>
 
@@ -133,8 +150,8 @@
                         </div>
 
                         <!-- Coluna Direita -->
-                        <div
-                            class="col-12 bg-secondary col-md-6 d-flex flex-column align-items-center justify-content-center">
+                        <div style="background-color: #D99962; padding: 24px;"
+                            class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
                             <h2>Principais Impactos do El nino nos Pets!</h2>
                             <br>
@@ -162,24 +179,20 @@
 
 
             <!-- Pagina 3 -->
-            <section style="min-height: 100vh; background-color: brown;"
+            <section id="pagina3" style="min-height: 100vh; background-color: #F2F2F2;"
                 class="d-flex justify-content-center align-items-center flex-column">
 
-                <h1>Gostaria de mais informações? Entre em contato com nossa ong:</h1>
+                <h2>Gostaria de mais informações? Entre em contato com nossa ong:</h2>
                 <br>
-                <form class="w-75">
+                <br>
+                <form class="w-75" style="max-width: 600px;">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <label for="exampleInputPassword1" class="form-label">Nome</label>
                         <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -187,7 +200,20 @@
             </section>
         </main>
 
-        <footer class="mt-auto" style="min-height: 10vh; background-color: black;">
+        <footer class="mt-auto d-flex align-items-center justify-content-center"
+            style="min-height: 10vh; background-color: #733F2D;">
+
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #F2F2F2;" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #F2F2F2" href="#pagina2">Cuidados com o Pet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color: #F2F2F2" href="#pagina3">Contato</a>
+                </li>
+            </ul>
 
         </footer>
 
