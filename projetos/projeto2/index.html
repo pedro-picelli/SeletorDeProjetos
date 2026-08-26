@@ -44,10 +44,35 @@
         </header>
 
         <main>
-            
+
             <section id="presentation-section">
 
-                <div class="feedbacks-div w-100">
+                <article class="presentation-article">
+
+                    <div class="container-fluid presentation-infos" style="max-width: 960px;">
+                        <div class="presentation-text-infos">
+                            <div class="presentation-title">
+                                <h1>O verdadeiro sabor do BBQ artesanal em Rio Claro</h1>
+                            </div>
+                            <div class="presentation-about">
+                                <p>Carnes preparadas lentamente, com técnicas tradicionais de defumação e muito cuidado
+                                    em cada detalhe</p>
+                                <p>Um churrasco feito para quem valoriza sabor, qualidade e uma experiência diferente.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="presentation-actions">
+
+                            <a href="#history-section">Conheça-nos</a>
+
+                        </div>
+
+                    </div>
+
+
+                </article>
+
+                <div class="feedbacks-div w-100 mb-5">
 
                     <div class="feedbacks-tracker">
                         <div class="feedbacks-list">
@@ -103,33 +128,89 @@
                     </div>
 
                 </div>
-                
+            </section>
+
+            <section id="history-section">
 
 
+                <div class="row w-100">
+                    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
 
-
-
-                <article class="presentation-article">
-
-                    <div class="container-fluid presentation-infos" style="max-width: 960px;">
-                        <div class="presentation-text-infos">
-                            <div class="presentation-title">
-                                <h1>O verdadeiro sabor do BBQ artesanal em Rio Claro</h1>
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="meat-carousel" style="border-radius: 6px;">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="./images/meat1.jpg" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./images/meat2.jpg" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./images/meat3.jpg" class="d-block w-100">
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="./images/meat4.jpg" class="d-block w-100">
+                                </div>
                             </div>
-                            <div class="presentation-about">
-                                <p>Carnes preparadas lentamente, com técnicas tradicionais de defumação e muito cuidado em cada detalhe</p>
-                                <p>Um churrasco feito para quem valoriza sabor, qualidade e uma experiência diferente.</p>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+
+                        <h1 class="fs-2">Nossa História</h1>
+                        <p>O Pachecos BBQ nasceu da paixão pelo churrasco e pelo desejo de transformar uma boa refeição
+                            em uma experiência marcante. Inspirado nas tradicionais técnicas de BBQ, nosso trabalho
+                            valoriza o tempo, o fogo e a fumaça como ingredientes essenciais para criar carnes macias,
+                            saborosas e cheias de personalidade.</p>
+                        <p>Cada corte é preparado com cuidado, respeitando seu próprio tempo e buscando o equilíbrio
+                            perfeito entre sabor, textura e suculência. Mais do que servir churrasco, o Pachecos BBQ
+                            busca trazer para Rio Claro uma experiência artesanal, feita para quem aprecia boa comida e
+                            acredita que os melhores sabores levam tempo para serem construídos.</p>
+
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section id="differential-section" class="pt-5">
+
+                <div class="container-fluid" style="max-width: 960px;">
+                    <h1 class="fs-2" style="text-align: center;">Nosso Diferencial</h1>
+
+                    <div class="mt-4 d-flex flex-wrap justify-content-center gap-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/smudging.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Defumação lenta</h5>
+                                <p class="card-text">O tempo faz parte da receita. Nossas carnes são preparadas lentamente, absorvendo a fumaça e desenvolvendo sabores profundos e marcantes.</p>
                             </div>
                         </div>
-                        <div class="presentation-actions">
-
-                            <a href="#">Conhecer</a>
-
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/selected-cuts.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Cortes selecionados</h5>
+                                <p class="card-text">Cada corte é escolhido pensando no resultado final. Qualidade, preparo cuidadoso e atenção aos detalhes fazem parte de cada prato.</p>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/artisanal.png" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Feito artesanalmente</h5>
+                                <p class="card-text">Do preparo ao momento de servir, cada etapa recebe atenção. Porque para nós, um bom churrasco não é apenas uma refeição — é uma experiência.</p>
+                            </div>
                         </div>
                     </div>
-
-
-                </article>
+                </div>
 
             </section>
 
