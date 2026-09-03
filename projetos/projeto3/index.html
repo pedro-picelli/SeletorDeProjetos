@@ -1,0 +1,998 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedSync</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=call,location_on,mail,nest_clock_farsight_analog" />
+</head>
+
+<body>
+
+    <div class="-container d-flex flex-column">
+        <nav class="navbar navbar-expand-lg" style="height: 64px;">
+            <div class="container-fluid h-100" style="padding: 0 24px !important;">
+                <div class="d-flex align-items-center gap-2 h-100">
+                    <img id="logo-image" src="./images/logo.png" style="height: 100%;">
+                    <a class="navbar-brand" href="#">MedSync</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav" style="padding: 0 24px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catalog">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#history">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+
+            <section id="home">
+
+                <article id="presentation">
+
+                    <div>
+                        <h1>MedSync</h1>
+                        <p id="slogan">Saúde em perfeita sincronia</p>
+                        <p>Sua farmácia de bairro em Rio Claro/SP. Oferecemos atendimento humanizado, orientação
+                            farmacêutica de confiança e entrega ágil para cuidar da sua saúde integral.</p>
+
+                        <div id="presentation-action-buttons">
+                            <a href="#catalog" class="-default-button -primary-button">Ver Catálogo</a>
+                            <a href="#history" class="-default-button -secondary-button -text-light">Conheça Nossa
+                                História</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <article id="differentials">
+
+
+                    <div class="-card">
+
+                        <img src="./images/acolher.svg" width="64px" height="64px">
+
+                        <h1>Atendimento Acolhedor</h1>
+
+                        <p>Escuta ativa e orientação médica para você e sua família.</p>
+
+                    </div>
+                    <div class="-card">
+
+                        <img src="./images/casa.png" width="64px" height="64px">
+
+                        <h1>Farmácia de Bairro</h1>
+
+                        <p>Proximidade com a comunidade de Rio Claro/SP</p>
+
+                    </div>
+                    <div class="-card">
+
+                        <img src="./images/entrega.png" width="64px" height="64px">
+
+                        <h1>Entrega Rápida</h1>
+
+                        <p>Praticidade e agilidade para receber seus remédios em casa.</p>
+
+                    </div>
+
+
+                </article>
+
+            </section>
+
+
+
+
+            <section id="ordinary-meds" class="-base-page">
+                <div class="-page-title">
+                    <h1>Destaques</h1>
+                    <span></span>
+                </div>
+
+
+                <div class="d-flex align-items-center justify-content-center">
+                    <div id="carouselExampleInterval" style="max-width: 800px;"
+                        class="carousel slide carousel-dark w-100" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active -carousel" data-bs-interval="3000">
+
+
+
+                                <div class="-catalog-card">
+                                    <div class="-catalog-card-header">
+
+                                        <img src="./images/meds/paracetamol-750mg.png" alt="">
+
+                                        <div>
+                                            <span class="-card-category">Analgésico e Antitérmicos</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="-catalog-card-body">
+                                        <h1>Paracetamol 750mg</h1>
+                                        <p>Auxilia no alívio de dores leves a moderadas e na redução da febre.</p>
+                                    </div>
+
+                                    <div class="-catalog-card-footer">
+
+                                        <p>R$: 8,90</p>
+                                        <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">Comprar</button>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="carousel-item -carousel" data-bs-interval="3000">
+
+
+                                <div class="-catalog-card">
+                                    <div class="-catalog-card-header">
+
+                                        <img src="./images/meds/fexofenadina-120mg.png" alt="">
+
+                                        <div>
+                                            <span class="-card-category">Antialérgico</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="-catalog-card-body">
+                                        <h1>Fexofenadina 120mg</h1>
+                                        <p>Auxilia no controle de sintomas relacionados a alergias.</p>
+                                    </div>
+
+                                    <div class="-catalog-card-footer">
+
+                                        <p>R$: 22,90</p>
+                                        <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">Comprar</button>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="carousel-item -carousel" data-bs-interval="3000">
+
+
+                                <div class="-catalog-card">
+                                    <div class="-catalog-card-header">
+
+                                        <img src="./images/meds/famotidina-20mg.png" alt="">
+
+                                        <div>
+                                            <span class="-card-category">Digestivo</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="-catalog-card-body">
+                                        <h1>Famotidina 20mg</h1>
+                                        <p>Atua na redução da produção de ácido gástrico.</p>
+                                    </div>
+
+                                    <div class="-catalog-card-footer">
+
+                                        <p>R$: 16,90</p>
+                                        <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">Comprar</button>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+
+            </section>
+
+
+
+            <section id="catalog" class="-base-page">
+
+                <div class="-page-title">
+                    <h1>Medicamentos & Catálogo</h1>
+                    <span></span>
+                </div>
+
+
+
+
+
+                <div id="catalog-main">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="-default-button -primary-button -filter-button active"
+                                id="pills-analgesics-tab" data-bs-toggle="pill" data-bs-target="#pills-analgesics"
+                                type="button" role="tab" aria-controls="pills-analgesics"
+                                aria-selected="true">Analgésicos e Antitérmicos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="-default-button -primary-button -filter-button" id="pills-antiallergics-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-antiallergics" type="button" role="tab"
+                                aria-controls="pills-antiallergics" aria-selected="false">Antialérgicos</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="-default-button -primary-button -filter-button" id="pills-digestives-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-digestives" type="button" role="tab"
+                                aria-controls="pills-digestives" aria-selected="false">Digestivos</button>
+                        </li>
+                    </ul>
+
+
+                    <!-- Analgésicos e Antitérmicos -->
+
+                    <div class="tab-content w-100" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-analgesics" role="tabpanel"
+                            aria-labelledby="pills-analgesics-tab" tabindex="0">
+
+
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="-catalog-items-wrapper">
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/paracetamol-750mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Analgésico e Antitérmicos</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Paracetamol 750mg</h1>
+                                            <p>Auxilia no alívio de dores leves a moderadas e na redução da febre.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 8,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/dipirona-500mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Analgésico e Antitérmicos</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Dipirona 500mg</h1>
+                                            <p>Utilizada para aliviar dores e reduzir estados febris.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 7,50</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/acido-acetilsalicilico-500mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Analgésico e Antitérmicos</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Ácido acetilsalicílico 500mg</h1>
+                                            <p>Auxilia no alívio de dores leves e na redução da febre.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 6,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/paracetamol-500mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Analgésico e Antitérmicos</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Paracetamol 500mg</h1>
+                                            <p>Auxilia no alívio de dores e sintomas associados à febre.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 6,50</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/dipirona-monoidratada-1g.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Analgésico e Antitérmicos</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Dipirona Monoidratada 1g</h1>
+                                            <p>Indicada para o alívio de dores e redução da febre.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 11,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/acido-acetilsalicilico-100mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Analgésico e Antitérmicos</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Ácido acetilsalicílico 100mg</h1>
+                                            <p>Utilizado em situações específicas conforme orientação profissional.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 9,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Antialérgicos -->
+
+                    <div class="tab-content w-100" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-antiallergics" role="tabpanel"
+                            aria-labelledby="pills-antiallergics-tab" tabindex="0">
+
+
+
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="-catalog-items-wrapper">
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/loratadina-10mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Antialérgico</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Loratadina 10mg</h1>
+                                            <p>Auxilia no alívio de sintomas associados a alergias.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 12,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/cetirizina-10mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Antialérgico</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Cetirizina 10mg</h1>
+                                            <p>Auxilia no alivio dos sintomas de reações alérgicas.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 14,50</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/desloratadina-5mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Antialérgico</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Desloratadina 5mg</h1>
+                                            <p>Proporciona alívio de manifestações alérgicas diversas.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 18,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/fexofenadina-120mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Antialérgico</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Fexofenadina 120mg</h1>
+                                            <p>Auxilia no controle de sintomas relacionados a alergias.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 22,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/levocetirizina-5mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Antialérgico</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Levocetirizina 5mg</h1>
+                                            <p>Indicada para o alívio de sintomas alérgicos leves.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 19,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/ebastina-10mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Antialérgico</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Ebastina 10mg</h1>
+                                            <p>Auxilia no tratamento de manifestações associadas a alergias.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 17,50</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Digestivos -->
+
+
+
+                    <div class="tab-content w-100" id="pills-tabContent">
+                        <div class="tab-pane fade" id="pills-digestives" role="tabpanel"
+                            aria-labelledby="pills-digestives-tab" tabindex="0">
+
+
+
+
+
+
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="-catalog-items-wrapper">
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/omeprazol-20mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Digestivo</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Omeprazol 20mg</h1>
+                                            <p>Auxilia na redução da produção de ácido no estômago.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 13,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/pantoprazol-40mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Digestivo</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Pantoprazol 40mg</h1>
+                                            <p>Reduz significativamente a produção de ácido gástrico.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 24,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/simeticona-40mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Digestivo</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Simeticona 40mg</h1>
+                                            <p>Auxilia no alívio do desconforto causado pelo excesso de gases.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 9,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/famotidina-20mg.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Digestivo</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Famotidina 20mg</h1>
+                                            <p>Atua na redução da produção de ácido gástrico.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 16,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/hidroxido-magnesio.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Digestivo</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Hidróxido de magnésio</h1>
+                                            <p>Utilizado para auxiliar no alívio da acidez e do desconforto gástrico.
+                                            </p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 12,50</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                    <div class="-catalog-card">
+                                        <div class="-catalog-card-header">
+
+                                            <img src="./images/meds/bicarbonato-sodio.png" alt="">
+
+                                            <div>
+                                                <span class="-card-category">Digestivo</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="-catalog-card-body">
+                                            <h1>Bicarbonato de sódio</h1>
+                                            <p>Pode auxiliar na neutralização da acidez estomacal.</p>
+                                        </div>
+
+                                        <div class="-catalog-card-footer mt-auto">
+
+                                            <p>R$: 5,90</p>
+                                            <button class="-default-button -accent-button" data-bs-toggle="modal"
+                                                data-bs-target="#staticBackdrop">Comprar</button>
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+            <section id="history" class="-base-page">
+
+                <div class="-page-title">
+                    <h1>Nossa História</h1>
+                    <span></span>
+                </div>
+
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div id="history-images" class="col-12 col-lg-6">
+
+                            <div id="carouselExampleSlidesOnly" class="carousel slide -carousel-history" data-bs-ride="carousel">
+                                <div class="carousel-inner" data-bs-interval="2000">
+                                    <div class="carousel-item active">
+                                        <img src="./images/history/image1.png" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="./images/history/image2.png" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="./images/history/image3.png" class="d-block w-100">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="history-text" class="col-12 col-lg-6">
+
+                            <div>
+                                <h1>A União Entre Educação, Amizade e Superação</h1>
+
+                                <p>A <span class="-text-emphasis">MedSync</span> nasceu do encontro entre amizade, educação e superação. Seus fundadores, <span class="-text-emphasis">Daniel, Eduardo e Grilo (Lázaro)</span>, compartilhavam não apenas a profissão de professores, mas também o desejo de transformar a realidade das pessoas por meio do conhecimento, do cuidado e de iniciativas com propósito.</p>
+                                <p>Foi a partir dessa reflexão que surgiu a ideia da <span class="-text-emphasis">MedSync</span>, uma farmácia de bairro criada para estar em perfeita sintonia com a vida das pessoas. O nome representa justamente essa proposta: <span class="-text-emphasis">sincronizar saúde, tecnologia, atendimento e proximidade humana.</span>
+                                <p>Instalada em <span class="-text-emphasis">Rio Claro/SP</span>, a MedSync foi idealizada para ser uma farmácia moderna, acessível e acolhedora, preparada para atender famílias, idosos, pacientes em tratamento contínuo e toda a comunidade local. Mais do que vender medicamentos, a empresa busca criar vínculos, oferecer segurança e fazer com que cada cliente se sinta verdadeiramente cuidado.</p>
+                                <p>Assim, a história da MedSync representa a união de <span class="-text-emphasis">três professores empreendedores</span> que transformaram suas experiências pessoais e profissionais em um negócio com propósito social: colocar a saúde em perfeita sintonia com as necessidades das pessoas.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </section>
+
+
+
+
+            <section id="contact" class="-base-page">
+
+                <div class="-page-title">
+                    <h1>Fale Conosco</h1>
+                    <span></span>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-md-6 pb-4 pt-4 d-flex flex-column align-items-center justify-content-center">
+
+                        <div class="-contact-card" style="align-self: flex-end;">
+
+
+                            <form>
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" placeholder="Digite seu nome">
+
+                                <label for="mail">E-mail</label>
+                                <input type="email" id="mail" placeholder="seuemail@exemplo.com">
+                                
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" placeholder="Escreva sua dúvida ou mensagem"></textarea>
+                            
+                                <button class="-default-button -success-button">Enviar Mensagem</button>
+
+                            </form>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 pb-4 pt-4 d-flex flex-column align-items-center justify-content-center">
+
+                        <div class="-contact-card" style="align-self: flex-start;">
+
+                            <div class="-contact-card-med-infos">
+
+                                <h1>Informações da farmácia</h1>
+                                <p>
+                                    <span class="material-symbols-outlined -icon-med-info">location_on</span>
+                                    <span class="-text-emphasis">Endereço: </span>
+                                    Rio Claro / SP
+                                </p>
+
+                                <p>
+                                    <span class="material-symbols-outlined -icon-med-info">call</span>
+                                    <span class="-text-emphasis">Telefone: </span>
+                                    (19) 3500-0000
+                                </p>
+
+                                <p>
+                                    <span class="material-symbols-outlined -icon-med-info">mail</span>
+                                    <span class="-text-emphasis">E-mail: </span>
+                                    contato@medsync.com.br
+                                </p>
+
+                                <p>
+                                    <span class="material-symbols-outlined -icon-med-info">nest_clock_farsight_analog</span>
+                                    <span class="-text-emphasis">Horário: </span>
+                                    Segunda a Sábado: 08h às 20h
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+
+
+            <div class="modal fade -purchase-modal" id="staticBackdrop" data-bs-backdrop="static"
+                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Carrinho</h1>
+                        </div>
+                        <div class="modal-body">
+                            Medicamento adicionado ao carrinho com sucesso!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="-default-button -danger-button" data-bs-dismiss="modal"
+                                id="liveToastBtn">Remover</button>
+                            <button type="button" class="-default-button -success-button"
+                                data-bs-dismiss="modal">Entendido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="mt-auto">
+
+            <p class="-text-light">© MedSync - Saúde em perfeita sincronia. Todos os direitos reservados.</p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
